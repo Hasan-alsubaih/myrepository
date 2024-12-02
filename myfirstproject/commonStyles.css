@@ -1,0 +1,14 @@
+nav > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav > ul > li {
+  list-style: none;
+  font-size: larger;
+}
+ul li a.active {
+  background-color: rgb(red, green, blue);
+  border-radius: 20%;
+  color: red;
+}

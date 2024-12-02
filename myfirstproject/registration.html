@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="commonStyles.css" />
+    <title>Registration</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="registration.html">Registration</a></li>
+        <li><a href="special.html">Special</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h1>Register to make a Reservation</h1>
+    </div>
+    <div class="flex-test">
+      <label for="fname">Name</label>
+      <input type="text" id="fname" name="fname" />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" />
+      <label for="dor">Date of Reservation</label>
+      <input type="date" id="dor" name="dor" />
+    </div>
+    <div>
+      <h3>Extra:</h3>
+      <br>
+        <input type="checkbox" id="suna" name="vehicle1" value="sauna" />
+        <label for="suna">Sauna</label><br />
+        <input type="checkbox" id="swimming_pool" name="vehicle2" />
+        <label for="swimming_pool">Swimming pool</label><br />
+        <input type="submit" value="Submit" />
+        <br></br>
+      </form>
+      <label for="package">Choose Package:</label>
+      <select id="package" name="package">
+        <option value="basic">Basic</option>
+        <option value="premium">Premium</option></select
+      ><br />
+      <button type="submit">Submit</button>
+    </div>
+    <div>
+      <h2>Appointments:</h2>
+      <label for="with">With</label>
+      <input type="radio" id="with" name="appointment" />
+      <label for="without">Without</label>
+      <input type="radio" id="without" name="appointment" />
+      <input type="submit" value="Submit" />
+    </div>
+    <div>
+      <h2>Terms and conditions:</h2>
+    </div>
+    <div>
+      <ul>
+        <li>All reservations are subject to availability.</li>
+        <li>Changes or cancellations must be made 24 hours in advance.</li>
+        <li>Additional charges may apply for extra services.</li>
+      </ul>
+    </div>
+  </body>
+</html>
