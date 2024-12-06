@@ -112,7 +112,6 @@ function multiply2(a, b) {
   return y;
 }
 console.log(multiply2());
-
 console.log("Exercise 14");
 function triangleTypeof(a, b, c) {
   if (a === b && b === c && a === c) {
@@ -152,9 +151,12 @@ highestNumber();
 
 console.log("Exercise 17");
 function Printvalue(array, index) {
-  console.log(numbers.at(1));
+  console.log(array.at(index));
 }
-Printvalue();
+const numbers2 = [5, 6, 7];
+Printvalue(numbers2, 3);
+Printvalue(numbers2, 2);
+Printvalue(numbers, 3);
 
 console.log("Exercise 18");
 function string() {
@@ -247,4 +249,32 @@ function repeatvalues() {
 }
 repeatvalues();
 
-console.log(" DOM Exercise 27");
+console.log("Exercise 27");
+const Bandsarray = ["Dire Straits", "Kansas", "Steely Dan"];
+function myBandList(array) {
+  const ulcontainer = document.getElementById("Bands");
+  for (let i = 0; i < Bandsarray.length; i++) {
+    const li = document.createElement("li");
+    li.innerText = Bandsarray[i];
+    ulcontainer.appendChild(li);
+  }
+}
+myBandList();
+
+console.log("Exercise 28");
+function addMultTable(rows, cols) {
+  const tableContainr = document.querySelector(".table-container");
+
+  for (let i = 0; i < rows; i++) {
+    const row = document.createElement("tr");
+    tableContainr.appendChild(row);
+
+    for (let j = 0; j < cols; j++) {
+      const col = document.createElement("td");
+      col.innerText = j + 1;
+      row.appendChild(col);
+    }
+  }
+}
+
+addMultTable(4, 6);
